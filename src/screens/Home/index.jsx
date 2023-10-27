@@ -2,6 +2,7 @@ import {Text, View} from "react-native"
 import { styles } from "./styles"
 import Header from "../../components/Header"
 import Card from "../../components/Card"
+import { useNavigation } from "@react-navigation/native"
 
 
 function Home(){
@@ -12,8 +13,9 @@ function Home(){
 
            <Header rodada="29ª Rodada"/>
            <View>
-                <Card stadium="Arena Grêmio"
-                    date="25/ 10 - ONtem - 21:30"
+                <Card
+                    stadium="Arena Grêmio"
+                    date="25/ 10 - Ontem - 21:30"
                     teamHome="Grêmio"
                     scoreHome="3"
                     teamVisited="Flamengo"
@@ -27,7 +29,7 @@ function Home(){
                     scoreVisited="0"
                     />
                     <Card stadium="Arena Grêmio"
-                    date="25/ 10 - ONtem - 21:30"
+                    date="25/ 10 - Ontem - 21:30"
                     teamHome="Grêmio"
                     scoreHome="3"
                     teamVisited="Flamengo"
