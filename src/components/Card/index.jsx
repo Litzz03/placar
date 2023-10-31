@@ -7,7 +7,7 @@ function Card(props){
     const navigation = useNavigation()
 
     function handleNavigationDetails(){
-        navigation.navigate("details")
+        navigation.navigate('details', {home: props.teamHome, visited: props.teamVisited})
     }
 
     return(
